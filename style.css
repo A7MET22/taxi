@@ -1,0 +1,58 @@
+img{
+    width: 200px;
+    height: 200px;
+    animation-name: car;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: block;
+    margin: 10px;
+    position: relative;
+}
+
+.demo1{
+animation-duration: 2s;
+}
+
+.demo2{
+    animation-duration: 3s;
+
+}
+
+.demo3{
+    animation-duration: 1.5s;
+
+}
+
+.demo4{
+    animation-duration: 2.5s;
+
+}
+
+@keyframes car{
+    0%{
+        top: 0;
+        left: -300px;
+        transform: rotateY(180deg);
+    }
+
+    49%{
+        transform: rotateY(180deg);
+    }
+
+    50%{
+        top: 0;
+        left: 1500px;
+        transform: rotateY(0deg);
+    }
+
+    99%{
+        transform: rotateY(0deg);
+    }
+
+    100%{
+        top: 0;
+        left: -300px;
+        transform: rotateY(180deg);
+    }
+
+}
